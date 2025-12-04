@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/nosotros.css";
+import "../styles/Styles.css";
 
 export default function Nosotros() {
   const fotos = [
