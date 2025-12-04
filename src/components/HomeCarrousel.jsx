@@ -3,7 +3,7 @@ import "../styles/Carrousel.css"; // usa tu css específico
 
 export default function HomeCarousel() {
   const fotos = [
-    { src: "/images/calle1.jpg", titulo: "Bienvenido" },
+    { src: "/images/calle1.jpg", titulo: "Galería por fuera, es la puerta de al medio" },
     { src: "/images/home1.jpg", titulo: "Nuestros Productos" },
     { src: "/images/home3.jpg", titulo: "Calidad Garantizada" },
   ];
