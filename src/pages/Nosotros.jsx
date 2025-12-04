@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/nosotros.css";
 
 export default function Nosotros() {
+  const fotos = [
+    { src: "/images/calle1.jpg", titulo: "Calle 1" },
+    { src: "/images/local.jpg", titulo: "Local" },
+    { src: "/images/galeria.jpg", titulo: "Galería" },
+  ];
+
+  const [index, setIndex] = useState(0);
+
+  const siguiente = () => setIndex((index + 1) % fotos.length);
+  const anterior = () => setIndex((index - 1 + fotos.length) % fotos.length);
+
   return (
     <main className="nosotros">
       <div className="nosotros-card">
@@ -15,19 +26,14 @@ export default function Nosotros() {
           </p>
         </div>
 
-        <div className="nosotros-fotos">
-          <div className="foto-item">
-            <img src="/images/calle1.jpg" alt="calle1" />
-            <p>Calle 1</p>
+        {/* Carrusel */}
+        <div className="carrusel">
+          <button className="carrusel-btn" onClick={anterior}>‹</button>
+          <div className="carrusel-img">
+            <img src={fotos[index].src} alt={fotos[index].titulo} />
+            <div className="carrusel-overlay">{fotos[index].titulo}</div>
           </div>
-          <div className="foto-item">
-            <img src="/images/local.jpg" alt="local" />
-            <p>Local</p>
-          </div>
-          <div className="foto-item">
-            <img src="/images/galeria.jpg" alt="galería" />
-            <p>Galería</p>
-          </div>
+          <button className="carrusel-btn" onClick={siguiente}>›</button>
         </div>
       </div>
     </main>

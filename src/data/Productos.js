@@ -5,10 +5,10 @@ export const productos = [
     id: 1,
     name: "Toffe",
     short: [
-     "Descripción breve del producto B",
-      "Ideal para uso diario",
+     "Altura: 1.70m",
+      "Medidas: 22 33 33",
       "Diseño compacto y ligero",
-      "HAMSTER"
+      "Gato"
     ],
     description: "Descripción A detallada, características y beneficios.",
     images: ["/images/prodA1.jpg", "/images/prodA2.jpg", "/images/prodA3.jpg"],
@@ -18,12 +18,12 @@ export const productos = [
   },
   {
     id: 2,
-    name: "Producto B",
+    name: "Hamster",
     short: [
-      "Descripción breve del producto B",
-      "Ideal para uso diario",
+      "Altura: 1.70m",
+      "Medidas: 22 33 33",
       "Diseño compacto y ligero",
-      "HAMSTER"
+      "Hamster"
     ],
     description: "Descripción B detallada, características y beneficios.",
     images: ["/images/prodB1.jpg", "/images/prodB2.jpg"],
@@ -36,10 +36,10 @@ export const productos = [
     id: 3,
     name: "iMAGEN C",
     short: [
-      "Descripción breve del producto B",
-      "Ideal para uso diario",
+      "Altura: 1.70m",
+      "Medidas: 22 33 33",
       "Diseño compacto y ligero",
-      "HAMSTER"
+      "Gato"
     ],
     description: "Descripción C detallada, características y beneficios.",
     images: ["/images/prodC1.jpg", "/images/prodC2.jpg"],
@@ -51,10 +51,10 @@ export const productos = [
     id: 4,
     name: "Imagen D",
     short: [
-      "Descripción breve del producto B",
-      "Ideal para uso diario",
+      "Altura: 1.70m",
+      "Medidas: 22 33 33",
       "Diseño compacto y ligero",
-      "HAMSTER"
+      "Gato"
     ],
     description: "Descripción D detallada, características y beneficios.",
     images: ["/images/prodD1.jpg", "/images/prodD2.jpg"],

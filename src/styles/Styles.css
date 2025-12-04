@@ -5,6 +5,9 @@
 @import "./ProductDetail.css";
 @import "./Card.css";
 @import "./Contact.css";
+@import "./Carrousel.css";
+@import "./Nosotros.css";
+
 
 /* Global layout */
 :root {

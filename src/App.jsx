@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Nosotros from "./pages/Nosotros";
 import ProductoDetail from "./pages/ProductDetail";
+import Products from "./pages/Products";   // <-- importa la nueva pantalla
 import "./styles/Styles.css";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/producto/:id" element={<ProductoDetail />} />
-          <Route path="/productos" element={<ProductoDetail />} />
+          <Route path="/productos" element={<Products />} /> {/* ahora apunta a Products.jsx */}
           <Route path="/contacto" element={<Contact />} />
           <Route path="/nosotros" element={<Nosotros />} />
         </Routes>

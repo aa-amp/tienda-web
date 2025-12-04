@@ -39,18 +39,18 @@ export default function Contact() {
       <div className="contact-location">
         <p>
           <a
-            href="https://maps.app.goo.gl/SF1CNZEnx7btug3R9"
+            href="https://maps.app.goo.gl/PikLruNGfE7usU4q9"
             target="_blank"
             rel="noreferrer"
           >
-            Visítanos en el local: Manuel Montt 772, Santiago, Región Metropolitana
+            Visítanos en la galeria del panky, Cafe Luly, San Pablo 1145 Santiago, Región Metropolitana
           </a>
         </p>
-        <p>O visítanos</p>
+        <p>Revisa nuestra ubicación en el mapa!</p>
 
         {/* Botón de mapa */}
         <a
-            href="https://maps.app.goo.gl/SF1CNZEnx7btug3R9"
+            href="https://maps.app.goo.gl/PikLruNGfE7usU4q9"
             target="_blank"
             rel="noreferrer"
             className="map-button"
