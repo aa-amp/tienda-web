@@ -1,0 +1,78 @@
+.contact-card {
+  background: #fff;
+  border: 2px solid #222;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact-text {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.contact-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  padding: 1rem;
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background 0.2s, transform 0.2s; /* Agrega 'transform' a la transición */
+}
+
+.contact-link:hover {
+  background: #000;
+  transform: translateY(-5px); /* Efecto de elevación */
+}
+
+.contact-logo {
+  width: 40px;              /* tamaño del logo */
+  height: 40px;
+  margin-bottom: 0.5rem;    /* espacio entre logo y texto */
+}
+
+.contact-location p {
+  margin: 0 0 0.5rem;
+  font-weight: bold;
+}
+.map-button {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+/* Estilo para el texto "Mapa" (azul y subrayado) */
+.map-link {
+    color: #0066cc; /* Azul clásico de enlace */
+    text-decoration: underline;
+}
+
+/* Efecto hover para el botón de mapa */
+.map-button:hover {
+    background-color: #f0f0f0;
+}

@@ -1,0 +1,27 @@
+@import "./Header.css";
+@import "./Footer.css";
+@import "./Navbar.css";
+@import "./Home.css";
+@import "./ProductDetail.css";
+@import "./Card.css";
+@import "./Contact.css";
+
+/* Global layout */
+:root {
+  --container-padding: 1rem;
+  --max-content-width: 1600px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.site-main {
+  min-height: 70vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--container-padding);
+  box-sizing: border-box;
+  max-width: var(--max-content-width);
+}

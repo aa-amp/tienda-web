@@ -1,0 +1,70 @@
+.nosotros {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.nosotros-card {
+  background: #fff;
+  border: 2px solid #222;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  max-width: 1400px;   /* más ancho que antes */
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.nosotros-text {
+  text-align: center;
+}
+
+.nosotros-text h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nosotros-text p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* Fotos en fila, todas iguales */
+.nosotros-fotos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* tres columnas iguales */
+  gap: 1.5rem; /* más espacio entre fotos */
+}
+
+.foto-item {
+  text-align: center;
+}
+
+.foto-item img {
+  width: 100%;             /* ocupa todo el ancho disponible */
+  height: 600px;           /* altura fija grande */
+  object-fit: cover;       /* recorta proporcionalmente */
+  border-radius: 8px;
+  border: 2px solid #000;
+}
+
+.foto-item p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Responsive: en pantallas pequeñas las fotos bajan a una sola columna */
+@media (max-width: 768px) {
+  .nosotros-fotos {
+    grid-template-columns: 1fr; /* una columna en móviles */
+  }
+
+  .foto-item img {
+    height: 400px; /* altura más razonable en móviles */
+  }
+}

@@ -1,0 +1,34 @@
+.site-header {
+  display: flex;
+  justify-content: space-between; /* logo a la izquierda, título centrado */
+  align-items: center;
+  background: #222;
+  color: #fff;
+  padding: 0.5rem 1rem;          /* menos espacio arriba/abajo */
+  position: relative;
+}
+
+.site-title {
+  flex: 1;                       /* ocupa todo el espacio central */
+  text-align: center;            /* título centrado */
+  margin: 0;
+}
+
+.site-title-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 3rem;               /* título al doble de tamaño */
+  font-weight: bold;
+}
+
+.logo {
+  width: 90px;                   /* logo más grande */
+  height: auto;
+  display: block;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;   /* logo sigue a la izquierda */
+}
