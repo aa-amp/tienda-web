@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/Carrousel.css"; // usa tu css específico
+import "../styles/Styles.css"; 
 
 export default function HomeCarousel() {
   const fotos = [

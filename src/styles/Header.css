@@ -1,28 +1,28 @@
 .site-header {
   display: flex;
-  justify-content: space-between; /* logo a la izquierda, título centrado */
+  justify-content: space-between; 
   align-items: center;
   background: #222;
   color: #fff;
-  padding: 0.5rem 1rem;          /* menos espacio arriba/abajo */
+  padding: 0.5rem 1rem;
   position: relative;
 }
 
 .site-title {
-  flex: 1;                       /* ocupa todo el espacio central */
-  text-align: center;            /* título centrado */
+  flex: 1;
+  text-align: center;
   margin: 0;
 }
 
 .site-title-link {
   color: #fff;
   text-decoration: none;
-  font-size: 3rem;               /* título al doble de tamaño */
+  font-size: clamp(1.5rem, 5vw, 3rem); /* se adapta al ancho */
   font-weight: bold;
 }
 
 .logo {
-  width: 90px;                   /* logo más grande */
+  width: clamp(50px, 12vw, 90px); /* logo flexible */
   height: auto;
   display: block;
 }
@@ -30,5 +30,26 @@
 .logo-link {
   display: flex;
   align-items: center;
-  justify-content: flex-start;   /* logo sigue a la izquierda */
+  justify-content: flex-start;
+}
+
+/* 🔹 Responsive ajustes */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;       /* header en columna en móvil */
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .site-title {
+    flex: unset;
+  }
+
+  .site-title-link {
+    font-size: 2rem;              /* título más compacto en móvil */
+  }
+
+  .logo {
+    width: 60px;                  /* logo más pequeño en móvil */
+  }
 }

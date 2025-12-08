@@ -1,18 +1,17 @@
 @import "./Header.css";
-@import "./Footer.css";
 @import "./Navbar.css";
+@import "./Footer.css";
 @import "./Home.css";
-@import "./ProductDetail.css";
-@import "./Card.css";
-@import "./Contact.css";
-@import "./Carrousel.css";
 @import "./Nosotros.css";
+@import "./ProductDetail.css";
+@import "./Contact.css";
 
-
-/* Global layout */
 :root {
   --container-padding: 1rem;
-  --max-content-width: 1600px;
+  --max-content-width: 1200px;
+  --gap: 1rem;
+  --font-base: 1rem;
+  --font-large: 1.5rem;
 }
 
 body {
@@ -27,4 +26,33 @@ body {
   padding: var(--container-padding);
   box-sizing: border-box;
   max-width: var(--max-content-width);
+}
+
+@media (max-width: 768px) {
+  .home-container, .nosotros-card, .contact-card, .product-info {
+    padding: 1rem;
+  }
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+  .card-title {
+    font-size: 1.2rem;
+  }
+  .card-desc {
+    font-size: 0.9rem;
+  }
+  .carrusel-img img {
+    max-height: 40vh;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .site-title-link {
+    font-size: 2rem;
+  }
+  .logo {
+    width: 60px;
+  }
 }

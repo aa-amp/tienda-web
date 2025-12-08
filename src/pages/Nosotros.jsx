@@ -3,9 +3,9 @@ import "../styles/Styles.css";
 
 export default function Nosotros() {
   const fotos = [
-    { src: "/images/calle1.jpg", titulo: "Calle 1" },
-    { src: "/images/local.jpg", titulo: "Local" },
-    { src: "/images/galeria.jpg", titulo: "Galería" },
+    { src: "/images/calle1.jpg", titulo: "Galeria, debes entrar por la puerta del centro." },
+    { src: "/images/local.jpg", titulo: "Este es nuestro local por fuera. Es el segundo abierto a la derecha." },
+    { src: "/images/galeria.jpg", titulo: "Esta es la galería por dentro." },
   ];
 
   const [index, setIndex] = useState(0);
@@ -19,7 +19,7 @@ export default function Nosotros() {
         <div className="nosotros-text">
           <h2>Nosotros</h2>
           <p>
-            Somos negocio X, nos dedicamos a ofrecer productos de calidad y un servicio cercano.
+            Somos Cafe Luly, nos dedicamos a ofrecerte una experiencia inolvidable, mujeres hermosas y atención de calidad con un servicio cercano.
           </p>
           <p>
             Estamos ubicados en San Pablo 1145, Santiago, Región Metropolitana.
@@ -35,6 +35,9 @@ export default function Nosotros() {
           </div>
           <button className="carrusel-btn" onClick={siguiente}>›</button>
         </div>
+        <p>
+            Debes entrar a la galeria, nuestro cafe es el segundo abierto por la parte derecha. 
+          </p>
       </div>
     </main>
   );

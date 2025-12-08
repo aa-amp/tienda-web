@@ -11,7 +11,7 @@ export default function Contact() {
 
       <div className="contact-links">
         <a
-          href="https://instagram.com"
+          href="https://instagram.com/cafe.luly"
           target="_blank"
           rel="noopener noreferrer"
           className="contact-link"

@@ -1,53 +1,37 @@
 .site-footer {
-  background: #111;          /* más oscuro */
-  color: #f5f5f5;            /* letras más claras */
-  padding: 1rem;             /* sigue compacto */
+  background: #111;
+  color: #f5f5f5;
+  padding: 1rem;
   text-align: center;
 }
-
-.footer-about {
-  margin-bottom: 0.8rem;     /* un poco más separación del bloque */
-}
-
 .footer-about h2 {
-  font-size: 1.4rem;         /* un poco más grande */
-  margin-bottom: 0.8rem;     /* más separación debajo del título */
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
 }
-
 .footer-about p {
-  font-size: 1.1rem;         /* texto más grande */
-  margin: 0.5rem 0;          /* más separación vertical entre párrafos */
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
 }
-
 .footer-about a {
-  color: #4caf50;            /* verde moderno */
+  color: #4caf50;
   text-decoration: none;
   font-weight: 600;
 }
-
 .footer-about a:hover {
   text-decoration: underline;
-  color: #66bb6a;            /* verde más claro al pasar el mouse */
+  color: #66bb6a;
 }
-
-.footer-logos {
-  margin: 1rem 0;            /* más separación con los íconos */
-}
-
 .footer-logo {
-  width: clamp(28px, 3vw, 40px); /* un poco más grandes */
+  width: clamp(28px, 3vw, 40px);
   margin: 0 10px;
   transition: transform 0.2s ease, filter 0.2s ease;
 }
-
 .footer-logo:hover {
-  transform: translateY(-4px);   /* se levanta */
-  filter: invert(28%) sepia(100%) saturate(500%) hue-rotate(340deg); 
-  /* efecto rojo */
+  transform: translateY(-4px);
+  filter: invert(28%) sepia(100%) saturate(500%) hue-rotate(340deg);
 }
-
 .footer-copy {
-  font-size: 1rem;           /* más grande */
-  color: #bbb;               /* más claro */
-  margin-top: 0.8rem;        /* más pegado al final pero con aire */
+  font-size: 1rem;
+  color: #bbb;
+  margin-top: 0.8rem;
 }
